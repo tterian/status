@@ -1,0 +1,30 @@
+/* -----------------------
+Primary style
+------------------------*/
+
+$back-color 	: #E4E8ED;
+$nav-color 		: #3880AD;
+$action-color 	: #C25B64;
+
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 100%;
+	font-family: "Open Sans", sans-serif;
+	color: #030d18;
+	background-color: $back-color;
+}
+
+a {
+	color: $action-color;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
