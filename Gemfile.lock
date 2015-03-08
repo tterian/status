@@ -151,7 +151,6 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  coffee-rails (~> 4.1.0)
   debugger
   jbuilder (~> 2.0)
   jquery-rails

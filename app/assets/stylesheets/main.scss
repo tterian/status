@@ -1,11 +1,11 @@
-/* -----------------------
+/* -------------------------------- 
 Primary style
-------------------------*/
+-------------------------------- */
 
-$back-color 	: #E4E8ED;
-$nav-color 		: #3880AD;
-$action-color 	: #C25B64;
-
+html * {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
 
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
@@ -14,17 +14,19 @@ $action-color 	: #C25B64;
 }
 
 body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-style: normal;
 	font-size: 100%;
-	font-family: "Open Sans", sans-serif;
-	color: #030d18;
-	background-color: $back-color;
+	color: #3d3536;
+	background-color: white;
+}
+
+body, html {
+	height: 100%;
 }
 
 a {
-	color: $action-color;
+	color: #b4d7a8;
 	text-decoration: none;
-}
-
-img {
-	max-width: 100%;
 }
