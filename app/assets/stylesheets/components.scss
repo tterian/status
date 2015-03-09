@@ -3,6 +3,7 @@ Main components
 -------------------------------- */
 
 $blue	 	: #48a1db;
+$yellow 	: #ffb463;
 
 .cd-main-content {
 	height: 100%;
@@ -24,6 +25,18 @@ $blue	 	: #48a1db;
 	text-align: center;
 	width: 90%;
 	max-width: 1170px;
+}
+
+.cd-btn {
+	display: inline-block;
+	padding: 1em 1.8em;
+	background-color: $yellow;
+	margin-top: 1em;
+	border-radius: 20em;
+	color: white !important;
+}
+.cd-btn:hover {
+	background-color: $yellow;
 }
 
 .cd-fixed-bg {
@@ -52,11 +65,12 @@ $blue	 	: #48a1db;
 	-ms-transform: translateX(-50%) translateY(-50%);
 	-o-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
-	width: 90%;
+	width: 100%;
 	max-width: 1170px;
 }
 .cd-fixed-bg.cd-bg-1 {
-	background-image: url("sfo.jpg");
+
+	background-image: url("bikes.jpg");
 }
 .cd-fixed-bg.cd-bg-2 {
 	background-image: url("sfo.jpg");
@@ -70,6 +84,7 @@ $blue	 	: #48a1db;
 @media only screen and (min-width: 768px) {
 	.cd-fixed-bg h1, .cd-fixed-bg h2 {
 		font-size: 36px;
+		font-weight: 300;
 	}
 }
 @media only screen and (min-width: 1170px) {
