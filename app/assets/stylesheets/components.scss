@@ -69,18 +69,13 @@ $yellow 	: #ffb463;
 	max-width: 1170px;
 }
 .cd-fixed-bg.cd-bg-1 {
-
 	background-image: url("bikes.jpg");
 }
 .cd-fixed-bg.cd-bg-2 {
-	background-image: url("sfo.jpg");
+	background-image: url("watch.jpg");
 }
-.cd-fixed-bg.cd-bg-3 {
-	background-image: url("sfo.jpg");
-}
-.cd-fixed-bg.cd-bg-4 {
-	background-image: url("sfo.jpg");
-}
+
+
 @media only screen and (min-width: 768px) {
 	.cd-fixed-bg h1, .cd-fixed-bg h2 {
 		font-size: 36px;
@@ -99,28 +94,24 @@ $yellow 	: #ffb463;
 
 .cd-scrolling-bg {
 	position: relative;
-	min-height: 100%;
-	padding: 4em 0;
+	height: 600px;
+	padding: 1em 0;
 	line-height: 1.6;
 	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 	z-index: 2;
 }
+.cd-scrolling-bg h1 {
+	font-weight: 400;
+	color: $blue;
+}
+
 .cd-scrolling-bg.cd-color-1 {
-	background-color: #3d3536;
-	color: #a6989a;
+	background-color: white;
 }
-.cd-scrolling-bg.cd-color-2 {
-	background-color: #99a478;
-	color: #3d3536;
-}
-.cd-scrolling-bg.cd-color-3 {
-	background-color: #b4d7a8;
-	color: #3d3536;
-}
+
 @media only screen and (min-width: 768px) {
 	.cd-scrolling-bg {
-		padding: 8em 0;
-		font-size: 20px;
+		padding: 1em 0;
 		font-size: 1.25rem;
 		line-height: 2;
 		font-weight: 300;
