@@ -9,7 +9,7 @@ $blue	 	: #48a1db;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 50px;
+	height: 70px;
 	background: rgba(255, 255, 255, 0.95);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 	z-index: 2;
@@ -22,7 +22,7 @@ $blue	 	: #48a1db;
 .cd-header #cd-logo {
 	display: inline-block;
 	float: left;
-	margin: 13px 0 0 5%;
+	margin: 10px 0 0 5%;
 	width: 180px;
 }
 .cd-header #cd-logo span {
@@ -113,7 +113,7 @@ $blue	 	: #48a1db;
 		height: auto;
 		line-height: normal;
 		background: transparent;
-		padding: .6em 1em;
+		padding: 1.6em 1em;
 		border-top: none;
 		color: $blue;
 		text-transform: uppercase;

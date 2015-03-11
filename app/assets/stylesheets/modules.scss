@@ -9,12 +9,15 @@ Modules - reusable parts of our design
 	margin: 0 auto;
 }
 .cd-container-text {
-	/* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
 	width: 50%;
 	float: left;
 	max-width: 768px;
 	margin: 0 auto;
 }
+.cd-container h1 {
+	font-size: 28px;
+}
+
 .cd-container-img {
 	margin: 76px 0 0 0;
 	float: right;
