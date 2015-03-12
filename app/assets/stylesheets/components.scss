@@ -73,9 +73,13 @@ $yellow 	: #e97d68;
 .cd-fixed-bg.cd-bg-2 {
 	background-image: url("watch.jpg");
 }
-.cd-fixed-bg.cd-bg-4 h2 {
+.cd-fixed-bg.cd-bg-3 h2 {
 	top: 40px;
 	z-index: 6;
+}
+.cd-fixed-bg.cd-bg-3 {
+	min-height: 0 !important;
+	height: 500px !important;
 }
 
 
@@ -83,6 +87,10 @@ $yellow 	: #e97d68;
 	.cd-fixed-bg h1, .cd-fixed-bg h2 {
 		font-size: 36px;
 		font-weight: 300;
+	}
+	.cd-fixed-bg.cd-bg-3 {
+		min-height: 0 !important;
+		height: 500px !important;
 	}
 }
 @media only screen and (min-width: 1170px) {
@@ -92,6 +100,10 @@ $yellow 	: #e97d68;
 	.cd-fixed-bg h1, .cd-fixed-bg h2 {
 		font-size: 48px;
 		font-weight: 300;
+	}
+	.cd-fixed-bg.cd-bg-3 {
+		min-height: 0 !important;
+		height: 540px !important;
 	}
 }
 
