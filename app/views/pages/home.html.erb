@@ -2,7 +2,8 @@
 	<div class="cd-fixed-bg cd-bg-1">
 		<div class="cd-intro">
 			<h1>Share your status with the world</h1>
-			<a href="/start" class="btn cd-btn btn-default" role="button">Start Evaluation</a>
+			<%= link_to "Start Evaluation", root_path, class: "btn cd-btn btn-default" %>
+			
 		</div>
 	</div>
 
@@ -18,7 +19,7 @@
 				</p>
 			</div>
 			<div class="cd-container-img">
-				<img src="assets/ipad_screen.jpg" alt="ipadScreen">
+				<%= image_tag("ipad_screen.jpg") %>
 			</div>
 		</div>
 	</div>

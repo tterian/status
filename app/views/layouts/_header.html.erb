@@ -1,14 +1,21 @@
 <header class="cd-header">
 	<div id="cd-logo">
-		<a href="#0"><img src="assets/icons/svg/bedge.svg" alt="Logo">
+		<%= link_to root_path do %>
+  			<%= image_tag("icons/svg/bedge.svg") %>
 			<span>Status</span>
-		</a>
+		<% end %>
 	</div>
 	<nav class="cd-main-nav">
 		<ul>
-			<li><a href="#0">Intro</a></li>
-			<li><a href="#0">Pricing</a></li>
-			<li><a href="#0">Contact Us</a></li>
+			<li>
+				<%= link_to "Intro", root_path %>
+			</li>
+			<li>
+				<%= link_to "Pricing", root_path %>
+			</li>
+			<li>
+				<%= link_to "Contact Us", root_path %>
+			</li>
 		</ul>
 	</nav>
 </header>
