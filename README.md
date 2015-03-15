@@ -8,3 +8,8 @@
 
 My experiments with creating a simple RWD landing page.
 Inspired from codyhouse.co
+
+## ToDo list
+
+* Fix sizing issues for small devices.
+* Make a product evaluation page.
