@@ -48,7 +48,7 @@ $blue	 	: #48a1db;
 	margin-right: 5%;
 	width: 44px;
 	height: 100%;
-	background: image-url("../img/cd-icon-menu.svg") no-repeat center center;
+	background: image-url("icons/svg/menu-icon.svg") no-repeat center center;
 	background-size: 44px 44px;
 	cursor: pointer;
 }
@@ -64,19 +64,19 @@ $blue	 	: #48a1db;
 	transform: translateY(-100%);
 }
 .cd-main-nav ul.is-visible {
-	-webkit-transform: translateY(50px);
-	-moz-transform: translateY(50px);
-	-ms-transform: translateY(50px);
-	-o-transform: translateY(50px);
-	transform: translateY(50px);
+	-webkit-transform: translateY(70px);
+	-moz-transform: translateY(70px);
+	-ms-transform: translateY(70px);
+	-o-transform: translateY(70px);
+	transform: translateY(70px);
 }
 .cd-main-nav a {
 	display: block;
 	height: 50px;
 	line-height: 50px;
 	padding-left: 5%;
-	background: #2f292a;
-	border-top: 1px solid #453c3d;
+	background: white;
+	border-top: 1px solid $blue;
 	color: $blue;
 }
 
