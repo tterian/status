@@ -9,28 +9,45 @@ Modules - reusable parts of our design
 	margin: 0 auto;
 }
 
-.cd-container-title {
-	text-align: center;
-}
-
-.cd-container-text {
-	width: 50%;
-	float: left;
-	max-width: 768px;
-	margin: 0 auto;
-}
-.cd-container h1 {
-	font-size: 28px;
-}
-
-.cd-container-img {
-	margin: 76px 0 0 0;
-	float: right;
-	z-index: 0;
-}
 .cd-container::after {
 	/* clearfix */
 	content: '';
 	display: table;
 	clear: both;
 }
+
+.cd-container-img img {
+	margin: 60px 25% 0 25%;
+	width: 50%;
+	height: auto;
+}
+
+.cd-container-title {
+	text-align: center;
+}
+
+.cd-container-text {
+	width: 50%;
+	max-width: 768px;
+	margin: 0 auto;
+}
+
+.cd-container h1 {
+	font-size: 1.5rem;
+}
+
+
+@media only screen and (min-width: 1170px) {
+	.cd-container-text {
+		float: left;
+	}
+	.cd-container-img img {
+		margin: 76px 0 0 0;
+		width: auto;
+		height: auto;
+		float: right;
+		z-index: 0;
+	}
+}
+
+
