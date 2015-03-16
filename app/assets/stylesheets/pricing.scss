@@ -292,17 +292,24 @@ $red	 	: #e97d68;
 .cd-pricing-header {
 	position: relative;
 	z-index: 1;
-	height: 80px;
+	height: 60px;
 	padding: 1em;
 	pointer-events: none;
 	background-color: #3aa0d1;
-	color: #FFFFFF;
+	color: white;
 }
 .cd-pricing-header h2 {
 	margin-bottom: 3px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
+
+.cd-price {
+	position: absolute;
+	padding-left: 80px;
+	top: 0;
+}
+
 .cd-popular .cd-pricing-header {
 	background-color: #e97d68;
 }
@@ -326,6 +333,13 @@ $red	 	: #e97d68;
 		font-size: 1rem;
 		letter-spacing: 2px;
 	}
+
+	.cd-price {
+		position: relative;
+		padding-left: 0;
+		top: 0;
+	}
+
 }
 
 .cd-currency, .cd-value {
@@ -340,7 +354,8 @@ $red	 	: #e97d68;
 	text-transform: uppercase;
 }
 .cd-popular .cd-duration {
-	color: $red;
+	content: '/';
+	color: #8dc8e4;
 }
 .cd-duration::before {
 	content: '/';
@@ -393,25 +408,20 @@ $red	 	: #e97d68;
 }
 
 .cd-pricing-features {
-	width: 600px;
+	width: auto;
 }
 .cd-pricing-features:after {
 	content: "";
-	display: table;
 	clear: both;
 }
 .cd-pricing-features li {
-	width: 100px;
+	width: auto;
 	float: left;
-	padding: 1.6em 1em;
 	font-size: 1.4rem;
-	text-align: center;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
+
 }
 .cd-pricing-features em {
-	display: block;
+	display: inline-block;
 	font-weight: 600;
 }
 @media only screen and (min-width: 768px) {
@@ -467,7 +477,6 @@ $red	 	: #e97d68;
 	transform: translateY(-50%);
 	height: 20px;
 	width: 20px;
-	background: url(../img/cd-icon-small-arrow.svg);
 }
 @media only screen and (min-width: 768px) {
 	.cd-pricing-footer {
