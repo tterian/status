@@ -3,7 +3,9 @@ Main components
 -------------------------------- */
 
 $blue	 	: #48a1db;
-$yellow 	: #e97d68;
+$blue-light	: #50B4F5;
+$red	 	: #e97d68;
+$red-light	: #ec907e;
 
 .cd-main-content {
 	height: 100%;
@@ -34,13 +36,13 @@ $yellow 	: #e97d68;
 .cd-btn {
 	display: inline-block;
 	padding: 1em 1.8em;
-	background-color: $yellow;
+	background-color: $red;
 	margin-top: 1em;
 	border-radius: 20em;
 	color: white !important;
 }
 .cd-btn:hover {
-	background-color: $yellow;
+	background-color: $red-light;
 }
 
 .cd-fixed-bg {

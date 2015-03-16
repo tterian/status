@@ -5,6 +5,7 @@ Pricing Components
 $blue	 	: #48a1db;
 $blue-light	: #50B4F5;
 $red	 	: #e97d68;
+$red-light	: #ec907e;
 
 .cd-pricing-container {
 	width: 90%;
@@ -167,24 +168,13 @@ $red	 	: #e97d68;
 	opacity: 1;
 }
 .cd-pricing-wrapper > li {
-	background-color: #FFFFFF;
+	background-color: white;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	/* Firefox bug - 3D CSS transform, jagged edges */
 	outline: 1px solid transparent;
 }
-.cd-pricing-wrapper > li::after {
-	/* subtle gradient layer on the right - to indicate it's possible to scroll */
-	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	height: 100%;
-	width: 50px;
-	pointer-events: none;
-	background: -webkit-linear-gradient( right , #FFFFFF, rgba(255, 255, 255, 0));
-	background: linear-gradient(to left, #FFFFFF, rgba(255, 255, 255, 0));
-}
+
 .cd-pricing-wrapper > li.is-ended::after {
 	/* class added in jQuery - remove the gradient layer when it's no longer possible to scroll */
 	display: none;
@@ -235,21 +225,10 @@ $red	 	: #e97d68;
 		display: none;
 	}
 	.cd-popular .cd-pricing-wrapper > li {
-		box-shadow: inset 0 0 0 3px #e97d68;
+		box-shadow: inset 0 0 0 3px $red;
 	}
 	.cd-has-margins .cd-pricing-wrapper > li, .cd-has-margins .cd-popular .cd-pricing-wrapper > li {
 		box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-	}
-	.cd-secondary-theme .cd-pricing-wrapper > li {
-		background: #3aa0d1;
-		background: -webkit-linear-gradient( bottom , #3aa0d1, #3ad2d1);
-		background: linear-gradient(to top, #3aa0d1, #3ad2d1);
-	}
-	.cd-secondary-theme .cd-popular .cd-pricing-wrapper > li {
-		background: #e97d68;
-		background: -webkit-linear-gradient( bottom , #e97d68, #e99b68);
-		background: linear-gradient(to top, #e97d68, #e99b68);
-		box-shadow: none;
 	}
 	:nth-of-type(1) > .cd-pricing-wrapper > li::before {
 		/* hide table separator for the first table */
@@ -295,7 +274,7 @@ $red	 	: #e97d68;
 	height: 60px;
 	padding: 1em;
 	pointer-events: none;
-	background-color: #3aa0d1;
+	background-color: $blue;
 	color: white;
 }
 .cd-pricing-header h2 {
@@ -311,7 +290,7 @@ $red	 	: #e97d68;
 }
 
 .cd-popular .cd-pricing-header {
-	background-color: #e97d68;
+	background-color: $red;
 }
 @media only screen and (min-width: 768px) {
 	.cd-pricing-header {
@@ -319,21 +298,17 @@ $red	 	: #e97d68;
 		padding: 1em 0.9em 1.6em;
 		pointer-events: auto;
 		text-align: center;
-		color: #173d50;
+		color: black;
 		background-color: transparent;
 	}
 	.cd-popular .cd-pricing-header {
 		color: $red;
 		background-color: transparent;
 	}
-	.cd-secondary-theme .cd-pricing-header {
-		color: #FFFFFF;
-	}
 	.cd-pricing-header h2 {
 		font-size: 1rem;
 		letter-spacing: 2px;
 	}
-
 	.cd-price {
 		position: relative;
 		padding-left: 0;
@@ -350,12 +325,12 @@ $red	 	: #e97d68;
 .cd-duration {
 	font-weight: 700;
 	font-size: 1.3rem;
-	color: #8dc8e4;
+	color: $blue-light;
 	text-transform: uppercase;
 }
 .cd-popular .cd-duration {
 	content: '/';
-	color: #8dc8e4;
+	color: $red-light;
 }
 .cd-duration::before {
 	content: '/';
@@ -374,13 +349,6 @@ $red	 	: #e97d68;
 	.cd-popular .cd-currency, .cd-popular .cd-duration {
 		color: $red;
 	}
-	.cd-secondary-theme .cd-currency, .cd-secondary-theme .cd-duration {
-		color: #2e80a7;
-	}
-	.cd-secondary-theme .cd-popular .cd-currency, .cd-secondary-theme .cd-popular .cd-duration {
-		color: #ba6453;
-	}
-
 	.cd-currency {
 		display: inline-block;
 		margin-top: 10px;
@@ -447,7 +415,7 @@ $red	 	: #e97d68;
 		margin: 0;
 	}
 	.cd-secondary-theme .cd-pricing-features li {
-		color: #FFFFFF;
+		color: white;
 	}
 	.cd-secondary-theme .cd-pricing-features li:nth-of-type(2n+1) {
 		background-color: transparent;
@@ -510,7 +478,7 @@ $red	 	: #e97d68;
 		display: inline-block;
 		height: auto;
 		padding: 1em 1em;
-		color: #FFFFFF;
+		color: white;
 		border-radius: 2px;
 		background-color: $blue;
 		font-size: 1.4rem;
@@ -522,16 +490,10 @@ $red	 	: #e97d68;
 		background-color: $blue-light;
 	}
 	.cd-popular .cd-select {
-		background-color: #e97d68;
+		background-color: $red;
 	}
 	.no-touch .cd-popular .cd-select:hover {
-		background-color: #ec907e;
-	}
-	.cd-secondary-theme .cd-popular .cd-select {
-		background-color: #0c1f28;
-	}
-	.no-touch .cd-secondary-theme .cd-popular .cd-select:hover {
-		background-color: #112e3c;
+		background-color: $red-light;
 	}
 	.cd-has-margins .cd-select {
 		display: block;
