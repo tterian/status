@@ -25,19 +25,19 @@ development:
  database: db/status_development
  host: localhost
  username: tigranas
- password: Virl645830
+ password:
 
 test:
  <<: *default
  database: db/status_test
  host: localhost
  username: tigranas
- password: Virl645830
+ password:
 
 production:
  <<: *default
  database: db/status_production
  host: localhost
  username: tigranas
- password: Virl645830
+ password:
 
